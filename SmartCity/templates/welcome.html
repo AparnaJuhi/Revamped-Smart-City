@@ -1,0 +1,6 @@
+{% extends 'base.html'%}
+{% block body %}
+Welcome {{email}}
+
+<button type="button" onclick="location.href='{% url 'logout' %}'">Logout</button>
+{%endblock body%}
