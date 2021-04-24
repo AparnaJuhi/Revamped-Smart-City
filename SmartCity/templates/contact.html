@@ -1,20 +1,101 @@
 {% extends 'base.html'%}
 
+{% block design %}
+<style>
+body {
+  background-color: #FC4445;
+    color: #FFFFFF;
+  
+}
+
+.box {
+    margin: auto
+}
+
+.card {
+    padding: 8%;
+    padding-top: 35px;
+    margin-top: 60px;
+    margin-bottom: 80px
+}
+
+textarea[name="message"] {
+    resize: none
+}
+
+#e-mail {
+    height: 45px
+}
+
+#message {
+    height: 120px
+}
+
+input.input-box,
+textarea.input-box {
+    background-color: #616161;
+    border: #616161;
+    color: #BDBDBD
+}
+
+input.input-box:focus,
+textarea.input-box:focus {
+    background-color: #000000;
+    color: #BDBDBD
+}
+
+.rm-border:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+form .form-control::-webkit-input-placeholder {
+    color: #9E9E9E
+}
+
+::-moz-placeholder {
+    color: #9E9E9E !important
+}
+
+input.btn-purple {
+    background-color: #5C6BC0;
+    color: #ffffff
+}
+</style>
+{%  endblock design %}
+
 {% block body %}
-<div class="container_fluid">
-<img src="/static/contact.jpg" class="d-block w-100"  alt="...">
-<h2 class="my-4 text-center">Contact Me </h2>
+
+<div class="bg-light">
+    <div class="container">
+        <div class="row justify justify-content-center">
+            <div class="col-11 col-md-8 col-lg-6 col-xl-5">
+                <form class="">
+                    <div class="card bg-dark">
+                        <div class="row mt-0">
+                            <div class="col-md-12 ">
+                                <h4 class="">Contact Us</h4>
+                                <p>We will love to know your ideas, comments and feedback</p>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-md-12 mb-0">
+                                <p class="mb-1">Email</p> <input id="e-mail" type="text" placeholder="Enter your email" name="email" class="form-control input-box rm-border">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12 mb-2">
+                                <p class="mb-1">Message</p> <textarea id="message" type="text" placeholder="Enter your message" name="message" class="form-control input-box rm-border"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center mb-0">
+                            <div class="col-md-12 px-3"> <input type="submit" value="Submit" class="btn btn-block btn-purple rm-border"> </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
-<form method="post"  action="/contact/">
-{% csrf_token %}
-<div class="m-4 row">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-</div>
-<div class="m-4 row">
-  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-  <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-</div>
-<button type="submit" class="btn btn-primary m-4 text-center">Submit</button>
-</form>
 {% endblock body %}
