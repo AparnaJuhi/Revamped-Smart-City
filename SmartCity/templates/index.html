@@ -1,0 +1,160 @@
+{% extends 'base.html'%}
+{% block design %}
+<style>
+ .divbyme{
+  height: 100%;
+  width: 80%;
+ margin: auto;
+ 
+}
+</style>
+{%  endblock design %}
+
+{% block body %}
+<div class="container  my-4">
+
+<h1 class="my-4 text-center">Welcome to the Smart City !</h1>
+ <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+ <div class="divbyme">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/image1.jpg"  class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/image2.jpg"  class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/image3.jpg"  class="d-block w-100" alt="...">
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div> 
+</div> 
+
+<div class="container my-4">
+<h2 class="my-4 text-center">What's happening here </h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="/static/image4.jpg" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">10 Indian Robotics Startups That Are Building a Better Tomorrow. We're starting to see people making humanoid robots, and while these get a lot of attention, robotics has actually delivered amazing productivity gains at the assembly line.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" 
+                  onClick="location.href='https://gadgets.ndtv.com/others/features/10-indian-robotics-startups-that-are-building-a-better-tomorrow-795055'">View</button>
+                 
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           
+            <img src="/static/image5.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">An influencer stock market will allow you to buy crypto coins tied to the reputation of icons like Elon Musk, Chamath Palihapitiya, and Justin Bieber</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" 
+                  onClick="location.href='https://www.msn.com/en-in/money/markets/an-influencer-stock-market-will-allow-you-to-buy-crypto-coins-tied-to-the-reputation-of-icons-like-elon-musk-chamath-palihapitiya-and-justin-bieber/ar-BB1fChIf?ocid=msedgntp'">View</button>
+                 
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/image6.jpg" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">IIT-Bombay got the cream of students this year too, with 67 of the top 100 rankers choosing the Powai campus to pursue their BTech. Last year, it was 65. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-sm btn-outline-secondary" 
+                  onClick="location.href='https://www.msn.com/en-in/money/careers/67-of-100-top-rankers-flock-to-iit-bombay/ar-BB1fwrWU?ocid=msedgntp'">View</button>
+                 
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/image6.jpg" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">IIT-Bombay got the cream of students this year too, with 67 of the top 100 rankers choosing the Powai campus to pursue their BTech. Last year, it was 65. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-sm btn-outline-secondary" 
+                  onClick="location.href='https://www.msn.com/en-in/money/careers/67-of-100-top-rankers-flock-to-iit-bombay/ar-BB1fwrWU?ocid=msedgntp'">View</button>
+                 
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <div class="col">
+          <div class="card shadow-sm">
+           
+            <img src="/static/image5.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">An influencer stock market will allow you to buy crypto coins tied to the reputation of icons like Elon Musk, Chamath Palihapitiya, and Justin Bieber</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" 
+                  onClick="location.href='https://www.msn.com/en-in/money/markets/an-influencer-stock-market-will-allow-you-to-buy-crypto-coins-tied-to-the-reputation-of-icons-like-elon-musk-chamath-palihapitiya-and-justin-bieber/ar-BB1fChIf?ocid=msedgntp'">View</button>
+                 
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           
+            <img src="/static/image5.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">An influencer stock market will allow you to buy crypto coins tied to the reputation of icons like Elon Musk, Chamath Palihapitiya, and Justin Bieber</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" 
+                  onClick="location.href='https://www.msn.com/en-in/money/markets/an-influencer-stock-market-will-allow-you-to-buy-crypto-coins-tied-to-the-reputation-of-icons-like-elon-musk-chamath-palihapitiya-and-justin-bieber/ar-BB1fChIf?ocid=msedgntp'">View</button>
+                 
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+{% endblock body %}
