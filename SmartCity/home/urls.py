@@ -9,5 +9,6 @@ urlpatterns = [
     path("signin",views.signin,name='signin'),
     path("postsign",views.postsign,name='postsign'),
     path("logout",views.logout,name='logout'),
+    path(r"^signup",views.signup,name='signup'),
 
 ]

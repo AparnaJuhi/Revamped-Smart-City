@@ -39,3 +39,7 @@ def logout(request):
     auth.logout(request)
     message="Successfully logout"
     return render(request,'signin.html',{"message":message})
+
+def signup(request):
+    return render(request,'signup.html')
+    
