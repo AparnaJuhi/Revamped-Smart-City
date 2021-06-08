@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 import pyrebase
+from home.models import Contact
 from django.contrib import auth
 config={'apiKey': "AIzaSyB5OhUoICNtfAO09VY5bBSERXNQWkSnTvw",
     'authDomain': "aparnafireapp.firebaseapp.com",
@@ -16,11 +17,17 @@ def index(request):
 def about(request):
     return render(request,'about.html')
 def contact(request):
-     return render(request,'contact.html')
+    if request.method=="POST":
+        email=request.POST.get('email')
+        desc=request.POST.get('desc')
+        contact=Contact(email=email, desc=desc)
+        contact.save()
+        
+    return render(request,'contact.html')
 # Create your views here.
 def signin(request):
     return render(request,'signin.html')
-
+ 
 def postsign(request):
     email=request.POST.get('email')
     password=request.POST.get('password')
